@@ -1,0 +1,109 @@
+body{
+    background-image: url('../images/pizzabg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.container{
+    color: white;    
+}
+html {
+    scroll-behavior: smooth;
+  }
+.title img{
+    width: 40%;
+    
+}
+.section-title{
+    width: 100%;
+    font-size: 1.7em;
+    background-color: #fb4040;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    
+}
+
+.pizza-img img{
+    width: 50%;
+    max-width: 100%;
+    margin-left: 25%;
+}
+.size-radios{
+    margin-top: 3%;
+}
+
+
+.in-text{
+    color: grey;
+}
+.size-radios{
+    color: grey;
+}
+
+.size-radio input[type="radio"], .crust-radio input[type="radio"], .toppings input[type="checkbox"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  .size-radio label, .crust-radio label, .topping-checkbox label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+.size-radio label:hover, .crust-radio label:hover, .topping-checkbox label:hover {
+    background-color: #dfd;
+  }
+.size-radio input[type="radio"]:checked + label, .crust-radio input[type="radio"]:checked + label, .topping-checkbox input[type="checkbox"]:checked +label {
+    background-color:#bfb;
+    border-color: #4c4;
+}
+.total-div{
+    color: grey;
+    font-size: 1.3em;
+}
+
+.two-div, .three-div, .total-div, .stuffed-img, .glutten-img, .alert-danger, .jumbotron, .delivery, .time{
+    display: none;
+}
+.sendOne, .sendTwo, .sendThree{
+    margin-left: 35%;
+    
+}
+.jumbotron{
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+}
+.time img{
+    width: 70%;
+}
+@media only screen and (min-width: 500px){
+    .pizza-img img{
+        margin-left: 40%;
+        width: 20%;
+    }
+    .size-radios, .crust-radios{
+        margin-top: 2%;
+        margin-left: 12%;
+    }
+    .title img{
+        width: 20%;
+        
+    }
+    .toppings{
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    .sendOne, .sendTwo{
+        margin-left: 45%;
+        width: 5%;
+    }
+    .time img{
+        width: 30%;
+    }
+
+    
+}
