@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/build.css">
+    <script src="js/jquery-3.5.1.slim.js"></script>
+    <script src="js/build.js"></script>
+    <title>Pizza-inn Restaurant</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <a href="index.html">
+              
+            </a>
+        </div>
+        <div class="one mb-3">
+            <div class="one-title section-title pl-4 card">
+                 Select a size for your prefered pizza.
+            </div>
+            <div class="one-div mb-5">
+                <div class="size size">
+                    <div class="row">
+                        <div class="col-12 pizza-img">
+                           
+                        </div>
+                    </div>
+                    <div class="row size-radios">
+                        <div class="col-4 size-radio">
+                            <input type="radio" id="small" name="size" value="small"> 
+                            <label for="small" class="size-labels">Small
+                            </label>                                                                                                                                                        
+                        </div>
+                        <div class="col-4 size-radio">
+                            <input type="radio" id="medium" name="size" value="medium">
+                            <label for="medium" class="size-labels">Medium
+                            </label>
+                        </div>
+                        <div class="col-4 size-radio">
+                            <input type="radio" id="large" name="size" value="large" checked>
+                            <label for="large" class="size-labels">Large    
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button class="sendOne btn btn-danger">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="two mb-3">
+            <div class="two-title section-title pl-4 card">
+                Select crust type.
+            </div>
+            <div class="two-div mb-5">
+                <div class="size size">
+                    <div class="row">
+                        <div class="col-12 pizza-img">
+                            
+                        </div>
+                    </div>
+                    <div class="row crust-radios">
+                        <div class="col-4 crust-radio">
+                            <input class="crispy-io" type="radio" id="crisp" name="crust" checked value="crispy"> 
+                            <label for="crisp" class="crust-labels">Crispy
+                            </label>                                                                                                                                                        
+                        </div>
+                        <div class="col-4 crust-radio">
+                            <input class="stuffed-io" type="radio" id="stuffed" name="crust" value="stuffed">
+                            <label for="stuffed" class="crust-labels">Stuffed
+                            </label>
+                        </div>
+                        <div class="col-4 crust-radio">
+                            <input class="glutten-io" type="radio" id="glutten" name="crust" value="glutten">
+                            <label for="glutten" class="crust-labels">Glutten Free    
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button class="sendTwo btn btn-danger">Next</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="three mb-3">
+            <div class="three-title section-title pl-4 card">
+                 Select pizza toppings.
+            </div>
+            <div class="alert alert-danger mt-3 pl-5" role="alert">
+                <h4>Please select at least one topping.</h4> 
+              </div>
+            <div class="three-div mb-5">
+                <div class="row toppings mt-5">
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="extra-cheese" value="extraCheese">
+                        <label for="extra-cheese" class="extra-cheese-labels">Extra Cheese    
+                        </label>
+                    </div>
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="bacon" value="bacon">
+                        <label for="bacon" class="baconlabels">Bacon    
+                        </label>
+                    </div>
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="onions" value="onions">
+                        <label for="onions" class="onionslabels">Onions    
+                        </label>
+                    </div>
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="pepperoni" value="pepperoni">
+                        <label for="pepperoni" class="pepperonilabels">Pepperoni    
+                        </label>
+                    </div>
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="mushrooms" value="mushrooms">
+                        <label for="mushrooms" class="mushroomslabels">Mushrooms    
+                        </label>
+                    </div>
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="pineapples" value="pineapples">
+                        <label for="pineapples" class="pineapplelabels">Pineapples    
+                        </label>
+                    </div>
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="olives" value="olives">
+                        <label for="olives" class="oliveslabels">Olives    
+                        </label>
+                    </div>
+                    <div class="col topping-checkbox">
+                        <input type="checkbox" class="toppingsClass" id="sausage" value="sausage">
+                        <label for="sausage" class="sausagelabels">Sausage    
+                        </label>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button class="complete btn btn-success offset-5 mt-3">Complete</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="total mb-3">
+            <div class="total-title section-title pl-4 card">
+                Pizza Checkout
+            </div>
+            <div class="total-div">
+                <div class="row total-title">
+                    <div class="col-2">
+                        Size
+                    </div>  
+                    <div class="col-2">
+                        Crust
+                    </div>
+                    <div class="col-4">
+                        Toppings.
+                    </div>
+                    <div class="col-3">
+                        Total
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 howManyAdd">
+
+                    </div>
+                    <div class="col-2 sizeAdd">
+
+                    </div>
+                    <div class="col-2 crustAdd">
+
+                    </div>
+                    <div class="col-4 toppingsAdd">
+
+                    </div>
+                    <div class="col-3 totalAdd">
+
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button class="checkout btn btn-success offset-3 mt-5"> Cart Checkout</button>
+                    </div>
+                    <div class="col">
+                        <button class="buyMore btn btn-danger mr-2 mt-5">Keep ordering on your cart</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="grand-div">
+                <div class="row">
+                    <div class="col jumbotron mt-5">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="delivery">
+                <div class="form-row mt-4">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Enter Address for Home Delivery">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button class="homeDelivery btn btn-success offset-2 offset-sm-5 mt-5">Provide address for home delivery</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="cancel btn btn-danger offset-5 mt-3">Cancel</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="row time">
+            <div class="col offset-1 offset-sm-3">
+                <p class="in-text">Your order will be delivered shortly...</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
